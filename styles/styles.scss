@@ -1,8 +1,25 @@
+
+@font-face {
+  font-family: MADEMirage;
+  src: url(../fonts/mirage_regular.woff);
+}
+
+@font-face {
+  font-family: MADEMirageBold;
+  src: url(../fonts/mirage_medium.woff);
+}
+
+@font-face {
+  font-family: MaisonNeue;
+  src: url(../fonts/maison_light.ttf);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 $darkcolor1: #131d2f;
 $darkcolor2: #354052;
 $darkcolor3: #083546;
@@ -14,8 +31,8 @@ $browncolor3: #6b4b3e;
 $creamcolor: #e8e5cc;
 $greycolor: #f2f2f2;
 $caramel: #BA2B2B;
-$primaryfont: "Inter", sans-serif;
-$secondaryfont: "Unna", serif;
+$primaryfont: MaisonNeue, sans-serif;
+$secondaryfont: MADEMirage, serif;
 
 body {
   position: relative;
@@ -85,7 +102,9 @@ img {
   }
   
   .header--mobile_menu svg {
+    position: relative;
     width: 35px;
+    z-index: 100;
   }
 
 }
@@ -104,10 +123,12 @@ img {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  clip-path: circle(100px at 90% -15%);
+  transition: all 1s ease-out;
 
   .header--top {
     width: 100%;
-    padding: 1em 2em;
+    padding: 1em 1.5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -130,6 +151,10 @@ img {
   }
 }
 
+.header--mobile--nav.open {
+  clip-path: circle(1500px at 90% -15%);
+}
+
 .hero {
   position: relative;
   display: flex;
@@ -146,7 +171,7 @@ img {
 
   .hero--content {
     position: absolute;
-    bottom: 4em;
+    bottom: 3.8em;
     right: 1.5em;
     max-width: 290px;
     display: flex;
@@ -165,9 +190,10 @@ img {
 
   .hero--btn {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 1em 0;
+    padding: 0 1.5em;
     width: 250px;
     height: 54px;
     background-color: $darkcolor3;
@@ -202,8 +228,8 @@ img {
     p {
       font-size: 1rem;
       line-height: 1.5rem;
-      max-width: 300px;
-      margin: 1em 0;
+      max-width: 380px;
+      margin: 1.5em 0;
     }
 
     .showcase--content--picker {
@@ -269,7 +295,8 @@ img {
 
       .product--name {
         p {
-          font-size: 1rem;
+          font-family: MADEMirageBold;
+          font-size: 1.2rem;
           line-height: 2rem;
           font-weight: 400;
         }
@@ -320,6 +347,7 @@ img {
     align-items: center;
 
     p {
+      font-family: $secondaryfont;
       font-size: 1rem;
       line-height: 2.2rem;
       text-align: center;
@@ -420,8 +448,9 @@ img {
     margin-bottom: 1em;
     a {
       font-family: $secondaryfont;
-      font-size: 1.5rem;
+      font-size: 2.8rem;
       font-weight: 400;
+      line-height: 2.5rem;
     }
   }
 
@@ -458,8 +487,12 @@ img {
 
       li {
         font-family: $primaryfont;
-        font-size: 1rem;
-        line-height: 1.8rem;
+
+        a {
+          font-size: 0.8rem;
+          line-height: 1.8rem;
+        }
+        
       }
     }
   }
@@ -574,11 +607,11 @@ img {
   .header--mobile_menu {
     display: none;
   }
+  
+  }
 
   .header--mobile--nav {
     display: none;
-  }
-  
   }
 
   .hero {
@@ -612,8 +645,9 @@ img {
   .stance {
     .stance--content {
       p {
-        font-size: 1.5rem;
-        line-height: 3rem;
+        max-width: 500px;
+        font-size: 1.3rem;
+        line-height: 2.5rem;
       }
     }
   }
@@ -633,7 +667,7 @@ img {
 
   .heading--1 {
     font-size: 4.5rem;
-    line-height: 3rem;
+    line-height: 4rem;
   }
 
   .hero {
@@ -650,15 +684,6 @@ img {
       width: 280px;
       height: 60px;
       margin: 2em 0;
-    }
-  }
-
-  .stance {
-    .stance--content {
-      p {
-        font-size: 1.5rem;
-        line-height: 3rem;
-      }
     }
   }
 
@@ -691,7 +716,7 @@ img {
   .products {
     padding: 5em 2em;
     .products--offset {
-      margin-top: -200px;
+      margin-top: -215px;
     }
 
     .products--grid {
@@ -711,6 +736,11 @@ img {
 
     .stance--content {
       padding: 5em 3em;
+
+      p {
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+      }
     }
   }
 
@@ -761,7 +791,7 @@ img {
 
   .hero {
     .hero--content {
-      max-width: 570px;
+      max-width: 600px;
     }
   }
   

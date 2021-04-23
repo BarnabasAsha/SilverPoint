@@ -1,3 +1,18 @@
+@font-face {
+  font-family: MADEMirage;
+  src: url(../fonts/mirage_regular.woff);
+}
+
+@font-face {
+  font-family: MADEMirageBold;
+  src: url(../fonts/mirage_medium.woff);
+}
+
+@font-face {
+  font-family: MaisonNeue;
+  src: url(../fonts/maison_light.ttf);
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -29,12 +44,12 @@ ul {
 }
 
 a, p {
-  font-family: "Inter", sans-serif;
+  font-family: MaisonNeue, sans-serif;
   font-weight: 300;
 }
 
 h1, h2, h3, h4 {
-  font-family: "Unna", serif;
+  font-family: MADEMirage, serif;
   font-weight: 400;
 }
 
@@ -67,7 +82,7 @@ img {
 }
 
 .header .header--logo a {
-  font-family: "Unna", serif;
+  font-family: MADEMirage, serif;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -78,7 +93,9 @@ img {
 }
 
 .header .header--mobile_menu svg {
+  position: relative;
   width: 35px;
+  z-index: 100;
 }
 
 .header--mobile--nav {
@@ -104,11 +121,15 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-clip-path: circle(100px at 90% -15%);
+          clip-path: circle(100px at 90% -15%);
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
 }
 
 .header--mobile--nav .header--top {
   width: 100%;
-  padding: 1em 2em;
+  padding: 1em 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,6 +166,11 @@ img {
   margin: 1em 0;
 }
 
+.header--mobile--nav.open {
+  -webkit-clip-path: circle(1500px at 90% -15%);
+          clip-path: circle(1500px at 90% -15%);
+}
+
 .hero {
   position: relative;
   display: -webkit-box;
@@ -169,7 +195,7 @@ img {
 
 .hero .hero--content {
   position: absolute;
-  bottom: 4em;
+  bottom: 3.8em;
   right: 1.5em;
   max-width: 290px;
   display: -webkit-box;
@@ -197,12 +223,14 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 1em 0;
+  padding: 0 1.5em;
   width: 250px;
   height: 54px;
   background-color: #083546;
@@ -247,8 +275,8 @@ img {
 .showcase .showcase--content p {
   font-size: 1rem;
   line-height: 1.5rem;
-  max-width: 300px;
-  margin: 1em 0;
+  max-width: 380px;
+  margin: 1.5em 0;
 }
 
 .showcase .showcase--content .showcase--content--picker {
@@ -267,7 +295,7 @@ img {
   top: 0;
   right: 1em;
   font-size: 1.3rem;
-  font-family: "Inter", sans-serif;
+  font-family: MaisonNeue, sans-serif;
   font-weight: 400;
 }
 
@@ -323,12 +351,13 @@ img {
 .products .products--grid .product--card .product--price {
   color: #BA2B2B;
   font-size: 0.9rem;
-  font-family: "Inter", sans-serif;
+  font-family: MaisonNeue, sans-serif;
   font-weight: 500;
 }
 
 .products .products--grid .product--card .product--name p {
-  font-size: 1rem;
+  font-family: MADEMirageBold;
+  font-size: 1.2rem;
   line-height: 2rem;
   font-weight: 400;
 }
@@ -371,7 +400,7 @@ img {
 
 .stance .stance--grid .stance--single small {
   font-size: 0.9rem;
-  font-family: "Inter", sans-serif;
+  font-family: MaisonNeue, sans-serif;
   font-weight: 300;
   margin: 0.5em 0;
 }
@@ -392,6 +421,7 @@ img {
 }
 
 .stance .stance--content p {
+  font-family: MADEMirage, serif;
   font-size: 1rem;
   line-height: 2.2rem;
   text-align: center;
@@ -517,9 +547,10 @@ img {
 }
 
 .footer .footer--logo a {
-  font-family: "Unna", serif;
-  font-size: 1.5rem;
+  font-family: MADEMirage, serif;
+  font-size: 2.8rem;
   font-weight: 400;
+  line-height: 2.5rem;
 }
 
 .footer a {
@@ -527,7 +558,7 @@ img {
 }
 
 .footer h4 {
-  font-family: "Inter", sans-serif;
+  font-family: MaisonNeue, sans-serif;
   font-size: 1.1rem;
   font-weight: 500;
   margin: 1em 0;
@@ -558,13 +589,16 @@ img {
 
 .footer .footer--grid .footer--col small {
   display: block;
-  font-family: "Inter", sans-serif;
+  font-family: MaisonNeue, sans-serif;
   margin: 3em 0;
 }
 
 .footer .footer--grid .footer--col li {
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
+  font-family: MaisonNeue, sans-serif;
+}
+
+.footer .footer--grid .footer--col li a {
+  font-size: 0.8rem;
   line-height: 1.8rem;
 }
 
@@ -685,7 +719,7 @@ img {
   .header .header--mobile_menu {
     display: none;
   }
-  .header .header--mobile--nav {
+  .header--mobile--nav {
     display: none;
   }
   .hero .hero--content {
@@ -708,8 +742,9 @@ img {
     width: 280px;
   }
   .stance .stance--content p {
-    font-size: 1.5rem;
-    line-height: 3rem;
+    max-width: 500px;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
   }
   .gram {
     padding: 5em 4em;
@@ -722,7 +757,7 @@ img {
 @media screen and (min-width: 1280px) {
   .heading--1 {
     font-size: 4.5rem;
-    line-height: 3rem;
+    line-height: 4rem;
   }
   .hero .hero--content {
     max-width: 570px;
@@ -735,10 +770,6 @@ img {
     width: 280px;
     height: 60px;
     margin: 2em 0;
-  }
-  .stance .stance--content p {
-    font-size: 1.5rem;
-    line-height: 3rem;
   }
   .stories .stories--bg {
     height: 400px;
@@ -760,7 +791,7 @@ img {
     padding: 5em 2em;
   }
   .products .products--offset {
-    margin-top: -200px;
+    margin-top: -215px;
   }
   .products .products--grid .product--card {
     width: 250px;
@@ -773,6 +804,10 @@ img {
   }
   .stance .stance--content {
     padding: 5em 3em;
+  }
+  .stance .stance--content p {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
   }
   .stories .stories--bg {
     padding: 0 6em;
@@ -804,7 +839,7 @@ img {
 
 @media screen and (min-width: 1400px) {
   .hero .hero--content {
-    max-width: 570px;
+    max-width: 600px;
   }
   .products {
     padding: 5em 2em;
