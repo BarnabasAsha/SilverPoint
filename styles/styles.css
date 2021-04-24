@@ -184,7 +184,7 @@ img {
       -ms-flex-pack: end;
           justify-content: flex-end;
   color: #ffffff;
-  height: 600px;
+  height: 610px;
   text-align: justify;
   padding: 1em;
   background: url(../images/hero.jpg);
@@ -505,7 +505,7 @@ img {
 }
 
 .gram {
-  padding: 4em 2em;
+  padding: 1em 2em;
 }
 
 .gram h2 {
@@ -548,7 +548,7 @@ img {
 
 .footer .footer--logo a {
   font-family: MADEMirage, serif;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   font-weight: 400;
   line-height: 2.5rem;
 }
@@ -711,6 +711,9 @@ img {
   }
   .footer {
     padding: 6em;
+  }
+  .footer .footer--logo a {
+    font-size: 2.8rem;
   }
   .footer .footer--grid {
     -webkit-box-orient: horizontal;
