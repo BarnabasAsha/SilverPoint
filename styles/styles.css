@@ -123,8 +123,8 @@ img {
           align-items: center;
   -webkit-clip-path: circle(100px at 90% -20%);
           clip-path: circle(100px at 90% -20%);
-  -webkit-transition: all 1.5s ease-out;
-  transition: all 1.5s ease-out;
+  -webkit-transition: all 1.2s ease-out;
+  transition: all 1.2s ease-out;
 }
 
 .header--mobile--nav .header--top {
