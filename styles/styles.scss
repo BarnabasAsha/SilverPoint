@@ -124,7 +124,7 @@ img {
   justify-content: flex-start;
   align-items: center;
   clip-path: circle(100px at 90% -20%);
-  transition: all 1s ease-out;
+  transition: all 1.5s ease-out;
 
   .header--top {
     width: 100%;
@@ -152,7 +152,7 @@ img {
 }
 
 .header--mobile--nav.open {
-  clip-path: circle(1500px at 90% -20%);
+  clip-path: circle(3000px at 90% -20%);
 }
 
 .hero {
