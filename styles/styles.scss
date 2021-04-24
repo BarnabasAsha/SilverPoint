@@ -124,7 +124,7 @@ img {
   justify-content: flex-start;
   align-items: center;
   clip-path: circle(100px at 90% -20%);
-  transition: all 1.2s ease-out;
+  transition: all 1s ease-out;
 
   .header--top {
     width: 100%;
@@ -183,8 +183,8 @@ img {
     }
   
     p {
-      font-size: 1.2rem;
-      line-height: 2rem;
+      font-size: 1.1rem;
+      line-height: 1.9rem;
     }
   }
 
@@ -192,7 +192,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1em 0;
+    margin: 1.5em 0;
     padding: 0 1.5em;
     width: 250px;
     height: 54px;
@@ -641,6 +641,7 @@ img {
 
       p {
         font-size: 1.25rem;
+        font-size: 2rem;
       }
     }
   }

@@ -123,8 +123,8 @@ img {
           align-items: center;
   -webkit-clip-path: circle(100px at 90% -20%);
           clip-path: circle(100px at 90% -20%);
-  -webkit-transition: all 1.2s ease-out;
-  transition: all 1.2s ease-out;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
 }
 
 .header--mobile--nav .header--top {
@@ -215,8 +215,8 @@ img {
 }
 
 .hero .hero--content p {
-  font-size: 1.2rem;
-  line-height: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.9rem;
 }
 
 .hero .hero--btn {
@@ -229,7 +229,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1em 0;
+  margin: 1.5em 0;
   padding: 0 1.5em;
   width: 250px;
   height: 54px;
@@ -751,6 +751,7 @@ img {
   }
   .hero .hero--content p {
     font-size: 1.25rem;
+    font-size: 2rem;
   }
   .showcase {
     padding: 2em 4em;
