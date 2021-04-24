@@ -35,7 +35,8 @@ $primaryfont: MaisonNeue, sans-serif;
 $secondaryfont: MADEMirage, serif;
 
 body {
-  overflow-x: hidden;
+  width: 100%;
+  overflow-x: hidden !important;
   position: relative;
   background-color: $greycolor;
   color: $darkcolor2;
@@ -384,6 +385,7 @@ img {
   }
 
   .stories--bg {
+    overflow-x: hidden;
     background-color: $palegreen;
     padding-top: 3em;
     display: flex;
@@ -407,6 +409,7 @@ img {
     }
 
     .stories--content {
+      overflow-x: hidden;
       width: 100%;    
 
       .stories--content--img {

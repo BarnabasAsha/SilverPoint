@@ -21,7 +21,8 @@
 }
 
 body {
-  overflow-x: hidden;
+  width: 100%;
+  overflow-x: hidden !important;
   position: relative;
   background-color: #f2f2f2;
   color: #354052;
@@ -465,6 +466,7 @@ img {
 }
 
 .stories .stories--bg {
+  overflow-x: hidden;
   background-color: #71816D;
   padding-top: 3em;
   display: -webkit-box;
@@ -498,6 +500,7 @@ img {
 }
 
 .stories .stories--bg .stories--content {
+  overflow-x: hidden;
   width: 100%;
 }
 
