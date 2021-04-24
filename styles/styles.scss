@@ -123,7 +123,7 @@ img {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  clip-path: circle(100px at 90% -15%);
+  clip-path: circle(100px at 90% -20%);
   transition: all 1s ease-out;
 
   .header--top {
@@ -152,7 +152,7 @@ img {
 }
 
 .header--mobile--nav.open {
-  clip-path: circle(1500px at 90% -15%);
+  clip-path: circle(1500px at 90% -20%);
 }
 
 .hero {
@@ -161,7 +161,7 @@ img {
   flex-direction: column;
   justify-content: flex-end;
   color: $lightcolor;
-  height: 90vh;
+  height: 600px;
   text-align: justify;
   padding: 1em;
   background: url(../images/hero.jpg);
@@ -173,7 +173,7 @@ img {
     position: absolute;
     bottom: 3.8em;
     right: 1.5em;
-    max-width: 290px;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -467,6 +467,7 @@ img {
 
   .footer--grid {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
@@ -498,9 +499,20 @@ img {
   }
 }
 
+@media  only screen and (max-width: 350px) {
+
+    .hero {
+      .hero--content {
+        max-width: 280px;
+        right: 1em;
+      }
+    }
+}
+
 @media screen and (min-width: 650px) {
 
   .hero {
+    height: 700px;
     .hero--content {
       max-width: 400px;
 
@@ -581,6 +593,9 @@ img {
 
   .footer {
     padding: 6em;
+    .footer--grid {
+      flex-direction: row;
+    }
   }
 }
 
@@ -672,7 +687,7 @@ img {
 
   .hero {
     .hero--content {
-      max-width: 570px;
+      max-width: 590px;
       right: 250px;
 
       p {
