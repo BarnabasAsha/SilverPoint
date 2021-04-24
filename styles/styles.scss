@@ -247,7 +247,7 @@ img {
     .showcase--content--price {
       position: absolute;
       top: 0;
-      right: 1em;
+      right: 0;
       font-size: 1.3rem;
       font-family: $primaryfont;
       font-weight: 400;
@@ -516,6 +516,7 @@ img {
     height: 700px;
     .hero--content {
       max-width: 400px;
+      right: 60px;
 
       p {
         font-size: 1.25rem;
@@ -528,7 +529,7 @@ img {
     margin: 9em auto 0 auto;
     flex-direction: row-reverse;
     justify-content: space-between;
-    max-width: 1100px;
+    max-width: 1200px;
 
     .showcase--content {
       width: 50%;
@@ -563,11 +564,12 @@ img {
   .stories {
 
     .stories--bg {
-      max-width: 1100px;
+      max-width: 1200px;
       flex-direction: row;
-      padding: 0 2em;
+      padding: 0 4em;
       margin: 0 auto;
-      height: 350px;
+      height: 400px;
+      overflow: hidden;
   
       .stories--title {
         width: 50%;
@@ -580,14 +582,11 @@ img {
       .stories--content {
         height: 100%;
         width: 50%;
-        background: url(../images/BG.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
         
         .stories--content--img {
-          display: none;
+          width: 350px;
         }
+        
       }
     }
   }
@@ -638,12 +637,8 @@ img {
   .hero {
     .hero--content {
       max-width: 550px;
-      right: 200px;
+      right: 100px;
 
-      p {
-        font-size: 1.25rem;
-        font-size: 2rem;
-      }
     }
   }
 
@@ -683,6 +678,17 @@ img {
     }
   }
 
+  .stories {
+    .stories--bg {
+      padding: 0 6em;
+      .stories--content {
+        .stories--content--img {
+          width: 400px;
+        }
+      }
+    }
+  }
+
 }
 
 @media screen and (min-width: 1280px) {
@@ -712,12 +718,18 @@ img {
   .stories {
     .stories--bg {
       height: 400px;
+
+      .stories--content {
+        .stories--content--img {
+          width: 500px;
+        }
+      }
     }
   }
 
   .showcase {
     margin: 13em auto 15em auto;
-    padding: 2em 4em;
+    padding: 2em 5em;
 
     .showcase--content {
 
@@ -770,14 +782,13 @@ img {
 
     .stories--bg {
       padding: 0 6em;
-      height: 480px;
-      max-width: 1200px;
+      height: 512px;
     }
 
     .stories--title {
 
       h3 {
-        font-size: 3.3rem;
+        font-size: 3.1rem;
         line-height: 4rem;
       }
     }

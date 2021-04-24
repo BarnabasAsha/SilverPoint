@@ -294,7 +294,7 @@ img {
 .showcase .showcase--content .showcase--content--price {
   position: absolute;
   top: 0;
-  right: 1em;
+  right: 0;
   font-size: 1.3rem;
   font-family: MaisonNeue, sans-serif;
   font-weight: 400;
@@ -620,6 +620,7 @@ img {
   }
   .hero .hero--content {
     max-width: 400px;
+    right: 60px;
   }
   .hero .hero--content p {
     font-size: 1.25rem;
@@ -634,7 +635,7 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    max-width: 1100px;
+    max-width: 1200px;
   }
   .showcase .showcase--content {
     width: 50%;
@@ -674,14 +675,15 @@ img {
     width: 50%;
   }
   .stories .stories--bg {
-    max-width: 1100px;
+    max-width: 1200px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 0 2em;
+    padding: 0 4em;
     margin: 0 auto;
-    height: 350px;
+    height: 400px;
+    overflow: hidden;
   }
   .stories .stories--bg .stories--title {
     width: 50%;
@@ -702,13 +704,9 @@ img {
   .stories .stories--bg .stories--content {
     height: 100%;
     width: 50%;
-    background: url(../images/BG.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   .stories .stories--bg .stories--content .stories--content--img {
-    display: none;
+    width: 350px;
   }
   .footer {
     padding: 6em;
@@ -748,11 +746,7 @@ img {
   }
   .hero .hero--content {
     max-width: 550px;
-    right: 200px;
-  }
-  .hero .hero--content p {
-    font-size: 1.25rem;
-    font-size: 2rem;
+    right: 100px;
   }
   .showcase {
     padding: 2em 4em;
@@ -777,6 +771,12 @@ img {
   .gram .gram--grid .gram--img {
     width: 280px;
   }
+  .stories .stories--bg {
+    padding: 0 6em;
+  }
+  .stories .stories--bg .stories--content .stories--content--img {
+    width: 400px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -799,9 +799,12 @@ img {
   .stories .stories--bg {
     height: 400px;
   }
+  .stories .stories--bg .stories--content .stories--content--img {
+    width: 500px;
+  }
   .showcase {
     margin: 13em auto 15em auto;
-    padding: 2em 4em;
+    padding: 2em 5em;
   }
   .showcase .showcase--content .showcase--content--price {
     font-size: 2rem;
@@ -836,11 +839,10 @@ img {
   }
   .stories .stories--bg {
     padding: 0 6em;
-    height: 480px;
-    max-width: 1200px;
+    height: 512px;
   }
   .stories .stories--title h3 {
-    font-size: 3.3rem;
+    font-size: 3.1rem;
     line-height: 4rem;
   }
   .gram {
