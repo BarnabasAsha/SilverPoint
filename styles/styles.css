@@ -374,14 +374,32 @@ img {
   margin-bottom: 1em;
 }
 
+.stance .stance--stance .stance--stance-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
 .stance .stance--grid {
-  margin: 2em 0;
+  margin: 2em 0 0 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
+  gap: 4em;
 }
 
 .stance .stance--grid .stance--single {
@@ -398,7 +416,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1em 0;
 }
 
 .stance .stance--grid .stance--single small {
@@ -877,6 +894,9 @@ img {
   }
   .products .products--grid .product--card {
     width: 300px;
+  }
+  .stance {
+    height: 900px;
   }
   .gram {
     padding: 5em 2em;
